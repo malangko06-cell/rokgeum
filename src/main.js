@@ -126,6 +126,7 @@ const listItems = [
 listItems.sort((a, b) => a.title.localeCompare(b.title, "ko"));
 
 const filterOptions = ["전체", "시설", "웹사이트", "활동", "기타"];
+const mascotImageSrc = `${import.meta.env.BASE_URL}rokgeumi.png`;
 
 const app = document.createElement("main");
 app.className = "page";
@@ -133,7 +134,7 @@ app.className = "page";
 app.innerHTML = `
   <section class="wrap">
     <div class="hero-header">
-      <img class="hero-mascot" src="/rokgeumi.png" alt="록금이 캐릭터" />
+      <img class="hero-mascot" src="${mascotImageSrc}" alt="록금이 캐릭터" />
       <div class="hero-copy">
         <div class="hero-title">
           <h1>등록금 본전 찾기</h1>
